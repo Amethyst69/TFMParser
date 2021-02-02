@@ -7,10 +7,10 @@ A tool to extract TFM Encryption keys (needed for connecting bots). In order not
 3) Run `cargo run src\main.rs`, after that, you will have to wait for it to build the project.
 4) When the project compiled, you can run the parser by running the executable generated => `target\debug\parser.exe`
 
-Here you will get the 3 things needed for the socket to recognize you as a player:
+Here you will get the 3 keys needed for the socket to recognize you as a player:
 
-`Version` - The current version of the SWF, this will increase by one every week.
+`Version` - The current version of the game.
 
-`Connection key` - This is a random string that changes every 10 minutes and is needed for the handshake packet.
+`Connection key` - This is a random string that changes every 10 minutes and it's being sent in the handshake packet.
 
-`Authentication key` - This number is needed for the server to recognize you as a player, in the handhshake.
+`Authentication key` - This key is needed for authenticating to the server.
